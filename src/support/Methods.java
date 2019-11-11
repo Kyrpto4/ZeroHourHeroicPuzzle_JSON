@@ -24,23 +24,35 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @JsonIgnoreProperties
 @SuppressWarnings("unused")
 public class Methods {
-	public String theFile = "";
-	public String fileName = "";
-	public String weeklyConfig = "";
-	public ObjectMapper objectMapper = new ObjectMapper();
-	List<Terminal> answerSheet = null;
+	private String theFile = "";
+	private String fileName = "";
+	private String weeklyConfig = "";
+	private ObjectMapper objectMapper = new ObjectMapper();
+	private List<Terminal> answerSheet = null;
+	private String[] labels = { "Terminal 1 - Left", "Terminal 1 - Right", "Terminal 3 - Left", "Terminal 3 - Right" };
+	private JTextField[] inputs = { new JTextField(3), new JTextField(3), new JTextField(3), new JTextField(3) };
+	private JComponent labelsAndFields = LayoutMaker.getTwoColumnLayout(labels, inputs);
+	private JComponent spellPanel = new JPanel(new BorderLayout(5, 5));
+	private String firstCall = "";
+	private String secondCall = "";
+	private String ans = "";
+	private Terminal temp = null;
+	private ListIterator<Terminal> it = null;
+	private Object[] possibilities = { "Arc", "Solar", "Void", "Exit" };
+	private Object input = null;
+	private InputStream inp = null;
 
 	public void builder(String oneLeft, String oneRight, String threeLeft, String threeRight) throws IOException {
-		String firstCall = oneLeft + "-" + oneRight;
-		String secondCall = threeLeft + "-" + threeRight;
+		firstCall = oneLeft + "-" + oneRight;
+		secondCall = threeLeft + "-" + threeRight;
 		analyzer(firstCall, secondCall);
 	}
 
 	public void analyzer(String arg1, String arg2) throws JsonParseException, JsonMappingException, IOException {
-		ListIterator<Terminal> it = answerSheet.listIterator();
+		it = answerSheet.listIterator();
 		while (it.hasNext()) {
-			String ans = "";
-			Terminal temp = it.next();
+			ans = "";
+			temp = it.next();
 			if (temp.getTerm1().equals(arg1) && temp.getTerm3().equals(arg2)) {
 				ans = temp.getAnswer();
 				int result = JOptionPane.showConfirmDialog(null, "The terminal is: \n" + ans, "Terminal",
@@ -53,10 +65,6 @@ public class Methods {
 	}
 
 	public void comboInput() throws IOException {
-		String[] labels = { "Terminal 1 - Left", "Terminal 1 - Right", "Terminal 3 - Left", "Terminal 3 - Right" };
-		JTextField[] inputs = { new JTextField(3), new JTextField(3), new JTextField(3), new JTextField(3) };
-		JComponent labelsAndFields = LayoutMaker.getTwoColumnLayout(labels, inputs);
-		JComponent spellPanel = new JPanel(new BorderLayout(5, 5));
 		spellPanel.add(new JLabel(weeklyConfig, SwingConstants.CENTER), BorderLayout.PAGE_START);
 		spellPanel.add(labelsAndFields, BorderLayout.CENTER);
 		int result = JOptionPane.showConfirmDialog(null, spellPanel, "Enter Combination", JOptionPane.OK_CANCEL_OPTION);
@@ -69,24 +77,20 @@ public class Methods {
 	}
 
 	public void initiate() throws Exception {
-		Object[] possibilities = { "Arc", "Solar", "Void", "Exit" };
-		Object input = JOptionPane.showOptionDialog(null, "Which configuration for this week?", "Start Menu",
+		JOptionPane.showMessageDialog(null, "Code for program provided by Kyrpto4; combinations sourced from Google Sheets, User: mashanti711", "Credits", JOptionPane.PLAIN_MESSAGE);
+		input = JOptionPane.showOptionDialog(null, "Which configuration for this week?", "Start Menu",
 				JOptionPane.PLAIN_MESSAGE, 3, UIManager.getIcon("OptionPane.questionIcon"), possibilities, "Start");
 		String option = input.toString();
 		String config = "";
-		int pic = 0;
 		switch (option) {
 		case "0":
 			config = "Arc";
-			pic = 3;
 			break;
 		case "1":
 			config = "Solar";
-			pic = 4;
 			break;
 		case "2":
 			config = "Void";
-			pic = 5;
 			break;
 		default:
 			System.exit(0);
@@ -94,7 +98,7 @@ public class Methods {
 		weeklyConfig = config;
 		fileName = "/" + config + ".json";
 		try {
-			InputStream inp = getClass().getResourceAsStream(fileName);
+			inp = getClass().getResourceAsStream(fileName);
 			String jsonArray = new String(IOUtils.toByteArray(inp), "UTF-8");
 			answerSheet = objectMapper.readValue(jsonArray, new TypeReference<List<Terminal>>() {
 			});

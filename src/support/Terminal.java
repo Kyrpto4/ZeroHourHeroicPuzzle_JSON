@@ -1,9 +1,9 @@
 package support;
 
 public class Terminal{
-	public String answer = "";
-	public String term1 = "";
-	public String term3 = "";
+	private String answer = "";
+	private String term1 = "";
+	private String term3 = "";
 	
 	public String getAnswer() {
 		return answer;
