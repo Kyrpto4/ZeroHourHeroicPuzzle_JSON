@@ -1,0 +1,247 @@
+[
+ {
+   "answer": "Blue 1",
+   "term1": "12-5",
+   "term3": "4-4"
+ },
+ {
+   "answer": "Blue 2",
+   "term1": "10-5",
+   "term3": "3-9"
+ },
+ {
+   "answer": "Blue 3",
+   "term1": "11-11",
+   "term3": "8-11"
+ },
+ {
+   "answer": "Blue 4",
+   "term1": "4-6",
+   "term3": "5-12"
+ },
+ {
+   "answer": "Blue 5",
+   "term1": "7-12",
+   "term3": "5-4"
+ },
+ {
+   "answer": "Blue 6",
+   "term1": "11-1",
+   "term3": "11-2"
+ },
+ {
+   "answer": "Blue 7",
+   "term1": "11-4",
+   "term3": "4-8"
+ },
+ {
+   "answer": "Cyan 1",
+   "term1": "2-6",
+   "term3": "10-3"
+ },
+ {
+   "answer": "Cyan 2",
+   "term1": "8-4",
+   "term3": "9-4"
+ },
+ {
+   "answer": "Cyan 3",
+   "term1": "1-12",
+   "term3": "5-4"
+ },
+ {
+   "answer": "Cyan 4",
+   "term1": "6-11",
+   "term3": "12-4"
+ },
+ {
+   "answer": "Cyan 5",
+   "term1": "12-2",
+   "term3": "2-11"
+ },
+ {
+   "answer": "Cyan 6",
+   "term1": "8-12",
+   "term3": "9-4"
+ },
+ {
+   "answer": "Cyan 7",
+   "term1": "8-5",
+   "term3": "11-11"
+ },
+ {
+   "answer": "Green 1",
+   "term1": "4-3",
+   "term3": "2-9"
+ },
+ {
+   "answer": "Green 2",
+   "term1": "2-4",
+   "term3": "3-10"
+ },
+ {
+   "answer": "Green 3",
+   "term1": "9-3",
+   "term3": "12-12"
+ },
+ {
+   "answer": "Green 4",
+   "term1": "10-3",
+   "term3": "7-11"
+ },
+ {
+   "answer": "Green 5",
+   "term1": "7-4",
+   "term3": "7-9"
+ },
+ {
+   "answer": "Green 6",
+   "term1": "10-12",
+   "term3": "8-12"
+ },
+ {
+   "answer": "Green 7",
+   "term1": "3-3",
+   "term3": "6-8"
+ },
+ {
+   "answer": "Purple 1",
+   "term1": "6-5",
+   "term3": "1-1"
+ },
+ {
+   "answer": "Purple 2",
+   "term1": "9-9",
+   "term3": "8-6"
+ },
+ {
+   "answer": "Purple 3",
+   "term1": "11-7",
+   "term3": "12-5"
+ },
+ {
+   "answer": "Purple 4",
+   "term1": "9-7",
+   "term3": "12-7"
+ },
+ {
+   "answer": "Purple 5",
+   "term1": "2-9",
+   "term3": "10-2"
+ },
+ {
+   "answer": "Purple 6",
+   "term1": "4-3",
+   "term3": "4-7"
+ },
+ {
+   "answer": "Purple 7",
+   "term1": "5-9",
+   "term3": "12-10"
+ },
+ {
+   "answer": "Red 1",
+   "term1": "1-2",
+   "term3": "11-4"
+ },
+ {
+   "answer": "Red 2",
+   "term1": "1-1",
+   "term3": "6-5"
+ },
+ {
+   "answer": "Red 3",
+   "term1": "8-10",
+   "term3": "11-11"
+ },
+ {
+   "answer": "Red 4",
+   "term1": "11-4",
+   "term3": "7-6"
+ },
+ {
+   "answer": "Red 5",
+   "term1": "5-6",
+   "term3": "7-10"
+ },
+ {
+   "answer": "Red 6",
+   "term1": "1-10",
+   "term3": "3-12"
+ },
+ {
+   "answer": "Red 7",
+   "term1": "11-6",
+   "term3": "11-11"
+ },
+ {
+   "answer": "White 1",
+   "term1": "1-1",
+   "term3": "8-10"
+ },
+ {
+   "answer": "White 2",
+   "term1": "10-2",
+   "term3": "9-3"
+ },
+ {
+   "answer": "White 3",
+   "term1": "8-6",
+   "term3": "2-10"
+ },
+ {
+   "answer": "White 4",
+   "term1": "12-5",
+   "term3": "5-7"
+ },
+ {
+   "answer": "White 5",
+   "term1": "4-8",
+   "term3": "9-3"
+ },
+ {
+   "answer": "White 6",
+   "term1": "7-2",
+   "term3": "3-12"
+ },
+ {
+   "answer": "White 7",
+   "term1": "6-9",
+   "term3": "8-5"
+ },
+ {
+   "answer": "Yellow 1",
+   "term1": "4-9",
+   "term3": "5-5"
+ },
+ {
+   "answer": "Yellow 2",
+   "term1": "2-5",
+   "term3": "3-5"
+ },
+ {
+   "answer": "Yellow 3",
+   "term1": "1-7",
+   "term3": "8-4"
+ },
+ {
+   "answer": "Yellow 4",
+   "term1": "7-9",
+   "term3": "5-12"
+ },
+ {
+   "answer": "Yellow 5",
+   "term1": "8-6",
+   "term3": "12-12"
+ },
+ {
+   "answer": "Yellow 6",
+   "term1": "2-7",
+   "term3": "9-10"
+ },
+ {
+   "answer": "Yellow 7",
+   "term1": "11-4",
+   "term3": "12-3"
+ }
+]
